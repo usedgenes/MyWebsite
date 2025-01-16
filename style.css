@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family: 'Arial';
+    color: purple;
+}
+
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+
+p {
+  color: green;
+  font-family: courier;
+}
+
+#corn_container {
+    height: 100%; 
+    width:100%; 
+    font-size: 0;
+}
+
+#corn_picture {
+    content:url(https://github.com/usedgenes/MyWebsite/blob/main/docs/assets/Corn.jpg?raw=true);
+    display: inline-block; 
+    width: 50%;
+}
+
+#corn_text {
+    display: inline-block; 
+    width: 50%;
+    font-size: 12px;
+    vertical-align: bottom;
+    margin-bottom:60px;
+}
+
+
+#subtitle {
+    background-color: #F5F5F5;
+    text-align: center;
+    margin: 10px 100px;
+}
