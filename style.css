@@ -32,12 +32,16 @@ p {
     width: 50%;
     font-size: 12px;
     vertical-align: bottom;
-    margin-bottom:60px;
+    margin-bottom:10px;
 }
 
+#link {
+    href: "https://www.w3schools.com";
+}
 
-#subtitle {
-    background-color: #F5F5F5;
-    text-align: center;
-    margin: 10px 100px;
+#space {
+    padding: 5px;
+}
+
+#more_info {
 }

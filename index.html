@@ -4,28 +4,45 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" />
-        <script type="text/javascript" src="javascript.js"></script>
 
         <title>GMOs</title>
-        <link rel="icon" type="image/x-icon" href="/docs/assets/DNA.jpg">
 
     </head>
     
     <body> 
         <h1 style ="color:red">GMOs</h1>
-        <img src="docs/assets/Corn.jpg"/>
 
         <div id = "subtitle">A website about food</div>
-
+        <div id = "space"></div>
         <div id = "corn_container"> 
             <div id = "corn_picture"></div>​
-            <div id = "corn_text">This is a picture of corn</div>
+            <div id = "corn_text">Genetically Modified Organisms (GMOs) are living organisms whose genetic material has been altered using biotechnology to introduce desirable traits. In agriculture, GMOs are commonly engineered to enhance crop resilience against pests, diseases, and environmental stressors like drought or extreme temperatures.</div>
+        </div>
+        <div id = "space"></div>
+        <div id = "link">
+            <a href="https://www.google.com/search?q=gmos">Learn more about GMOs</a>
+        </div>
+        <div id = "space"></div>
+        <button id = "show" type="button" onclick="myFunction()">Show less!</button>
+        <div id = "space"></div>
+        <div id = "more_info">Corn is good</div>
+        <div id = "link">
+            <a href="secondPage.html">Next Page</a>
         </div>
 
-        <a href="https://www.w3schools.com">This is a link</a>
-
-        <button type="button" onclick="myFunction()">Click Me!</button>
-
-
     </body>
+    <script src="javascript.js"></script>
 </html>
+
+<script>
+    function myFunction() { 
+        if(document.getElementById("show").innerHTML.includes("Show more!")) {
+            document.getElementById("more_info").hidden = false;
+            document.getElementById("show").innerHTML = "Show less!" 
+        }
+        else {
+            document.getElementById("more_info").hidden = true;
+            document.getElementById("show").innerHTML = "Show more!" 
+        }
+    }
+</script>
