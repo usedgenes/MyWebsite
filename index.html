@@ -10,31 +10,23 @@
     </head>
     
     <body> 
-        <h1 style ="color:red">GMOs</h1>
+        <h1 style ="color:red">Rocket Controller App Support</h1>
 
-        <div id = "subtitle">A website about food</div>
-        <div id = "space"></div>
-        <div id = "corn_container"> 
-            <div id = "corn_picture"></div>​
-            <div id = "corn_text">Genetically Modified Organisms (GMOs) are living organisms whose genetic material has been altered using biotechnology to introduce desirable traits. In agriculture, GMOs are commonly engineered to enhance crop resilience against pests, diseases, and environmental stressors like drought or extreme temperatures.</div>
-        </div>
-        <div id = "space"></div>
-        <div id = "link">
-            <a href="https://www.google.com/search?q=gmos">Learn more about GMOs</a>
-        </div>
-        <div id = "space"></div>
-        <button id = "show" type="button" onclick="myFunction()">Show less!</button>
-        <div id = "space"></div>
-        <div id = "more_info">Corn is good</div>
-        <div id = "link">
-            <a href="secondPage.html">Next Page</a>
-        </div>
+        <div id = "subtitle">For support on this app, please contact the developer at eugeneli126@gmail.com</div>
 
     </body>
-    <script src="javascript.js"></script>
 </html>
 
 <script>
+    document.getElementById('inputForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+
+      const userInput = document.getElementById('userInput').value;
+      const displayDiv = document.getElementById('display');
+
+      displayDiv.textContent = `You entered: ${userInput}`;
+    });
+    
     function myFunction() { 
         if(document.getElementById("show").innerHTML.includes("Show more!")) {
             document.getElementById("more_info").hidden = false;
